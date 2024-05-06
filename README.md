@@ -1,7 +1,7 @@
 # ISTQB ONLINE TEST
 
 This is an ISTQB Online Exam Web Project.
-[ISTQB ONLINE TEST PROJECT](https://bootcamp-qa.github.io/javascript-istqb/)
+[ISTQB ONLINE TEST PROJECT](https://rarias04.github.io/istqb-online-test/)
 
 ## BUILD WITH
 
@@ -35,5 +35,5 @@ Functional test results and bug report for each Sprint:
 
 ## AUTHOR
 
-Reyes Cuesta, QA Engineer
-[LinkedIn Profile](https://www.linkedin.com/in/reyescuesta)
+Rebeca Arias, QA Engineer
+[LinkedIn Profile](https://www.linkedin.com/in/rebeca-arias-antolin-57961a128/)
