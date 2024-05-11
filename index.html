@@ -34,6 +34,28 @@
       <div id="welcome">
         <h2>Welcome</h2>
         <p>Welcome to ISTQB Online Test</p>
+        <div class="was-validated">
+          <div class="mb-3">
+            <input
+              type="text"
+              id="welcome1"
+              required
+              maxlength="10"
+              placeholder="Name"
+              class="form-control"
+            />
+            <p class="valid-feedback"></p>
+            <p class="invalid-feedback">Name field is required or name can not have more than 10 charaters</p>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-success"
+          onclick="welcomeMessage()"
+        >
+          Send
+        </button>
+        <p id="welcomeresponse"></p>
       </div>
       <div id="test">
         <h2>Test</h2>
