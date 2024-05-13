@@ -32,7 +32,7 @@
 
     <div class="container mt-5">
       <div id="welcome">
-        <h2>Welcome</h2>
+        <h1>Welcome</h1>
         <p>Welcome to ISTQB Online Test</p>
         <div class="was-validated">
           <div class="mb-3">
@@ -48,18 +48,22 @@
             <p class="invalid-feedback">Name field is required or name can not have more than 10 charaters</p>
           </div>
         </div>
-        <button
-          type="button"
-          class="btn btn-success"
-          onclick="welcomeMessage()"
-        >
-          Send
-        </button>
-        <p id="welcomeresponse"></p>
+        <button type="button" class="btn btn-success" onclick="welcomeMessage()">Send</button>
+        <p id="welcomeResponse"></p>
       </div>
       <div id="test">
-        <h2>Test</h2>
-        <p>Istqb Online Test Section</p>
+        <h1>Test</h1>
+        <h2>ISTQB Online Test Section</h2>
+        <p>Question 1 of 10</p>
+        <div class="mb-3">
+          <h5>Which test may not mimic real world situations?</h5>
+          <input type="radio" id="aQuestion1" value= "A" name="question1" /> A. Functional Testing <br>
+          <input type="radio" id="bQuestion1" value= "B" name="question1" /> B. Structural Testing <br>
+          <input type="radio" id="cQuestion1" value= "C" name="question1" /> C. All of the above <br>
+          <input type="radio" id="emptyQuestion1" name="question1" /> Empty
+        </div>
+        <button type="button" class="btn btn-primary" onclick="showAnswer()">See Answer</button>
+        <p id="q1Response"></p>
       </div>
       <div id="ranking">
         <h2>Ranking</h2>

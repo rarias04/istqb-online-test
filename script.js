@@ -6,5 +6,11 @@ function print(message, id){
 function welcomeMessage(){
     let name = document.getElementById("welcome1").value;
     let message = " Welcome " + name + " to ISTQB online Test";
-    print(message, "welcomeresponse");
+    print(message, "welcomeResponse");
+}
+
+function showAnswer(){
+    let answer = document.getElementById("bQuestion1").value;
+    let message = "The correct answer is " + answer;
+    print(message, "q1Response")
 }
