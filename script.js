@@ -10,7 +10,7 @@ function welcomeMessage(){
 }
 
 function showAnswer(){
-    let answer = document.getElementById("bQuestion1").value;
+    let answer = "B"
     let message = "The correct answer is " + answer;
     print(message, "q1Response")
 }
