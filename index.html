@@ -55,13 +55,14 @@
         <h1>Test</h1>
         <h2>ISTQB Online Test Section</h2>
         <p>Question 1 of 10</p>
-        <div class="mb-3">
-          <h5>Which test may not mimic real world situations?</h5>
-          <input type="radio" id="aQuestion1" value= "A" name="question1" /> A. Functional Testing <br>
-          <input type="radio" id="bQuestion1" value= "B" name="question1" /> B. Structural Testing <br>
-          <input type="radio" id="cQuestion1" value= "C" name="question1" /> C. All of the above <br>
-          <input type="radio" id="emptyQuestion1" name="question1" /> Empty
-        </div>
+        <form class="mb-3">
+          <select id="options1" class="form-select">
+            <option value="">Empty</option>
+            <option value="A">A. Functional Testing</option>
+            <option value="B">B. Structural Testing</option>
+            <option value="C">C. All of the above</option>
+          </select>
+        </form>
         <button type="button" class="btn btn-primary" onclick="showAnswer()">See Answer</button>
         <p id="q1Response"></p>
       </div>
