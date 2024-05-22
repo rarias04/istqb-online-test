@@ -10,7 +10,23 @@ function welcomeMessage(){
 }
 
 function showAnswer(){
-    let answer = "B"
+    let answer = "B";
     let message = "The correct answer is " + answer;
     print(message, "q1Response")
+}
+
+function checkAnswer(){
+    let answer = document.getElementById("options1").value;
+    let message = "";
+    if (answer ==="B"){
+        message = "The answer is correct, well done!";
+    }
+    else if (answer === "A" || answer === "C") {
+        message = "The answer is incorrect, good try!";
+    }
+    else{
+        message = "Please, select an option";
+    }
+    print(message, "q1CheckAnswer");
+
 }
