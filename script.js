@@ -19,13 +19,13 @@ function checkAnswer(){
     let answer = document.getElementById("options1").value;
     let message = "";
     if (answer ==="B"){
-        message = "The answer is correct, well done!";
+        message = "The answer is correct, well done! You get 2 points for a correct answer";
     }
     else if (answer === "A" || answer === "C") {
-        message = "The answer is incorrect, good try!";
+        message = "The answer is incorrect, good try! One point is deducted for an incorrect answer";
     }
     else{
-        message = "Please, select an option";
+        message = "Please, select an option. Zero points for an empty answer";
     }
     print(message, "q1CheckAnswer");
 
