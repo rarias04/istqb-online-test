@@ -40,3 +40,29 @@ function checkAnswer(question){
    print (message, "q" + question + "CheckAnswer");
 } 
 
+let studentAnswer = new Array;
+let addition = 0;
+
+function addPunctuation(){
+    for(let i=0; i<testAnswers.length; i++) {
+        let answer = document.getElementById("options" + (i+1)).value;
+        studentAnswer.push(answer);
+    };
+
+    for(let j=0; j<studentAnswer.length; j++) {
+        if (studentAnswer[j] === "") {
+            addition = addition + 0;
+        }
+        else {
+            if (studentAnswer[j] === testAnswers[j]) {
+                addition = addition + 2;
+            }
+            else {
+                addition = addition - 1;
+            }
+        }
+    }
+
+    let message = "The final score is: " + addition;
+    print(message, "finishtest");
+}
