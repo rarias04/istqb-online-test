@@ -34,13 +34,13 @@
       <div id="welcome">
         <h1>Welcome</h1>
         <p>Welcome to ISTQB Online Test</p>
-        <div class="was-validated">
+        <form id="w1" class="was-validated">
           <div class="mb-3">
             <input type="text" id="welcome1" required maxlength="10" placeholder="Name" class="form-control"/>
             <p class="valid-feedback"></p>
             <p class="invalid-feedback">Name field is required</p>
           </div>
-        </div>
+        </form>
         <button type="button" class="btn btn-success" onclick="welcomeMessage()">Send</button>
         <p id="welcomeResponse"></p>
       </div>
@@ -193,10 +193,9 @@
           <p id="q11Response"></p>
         </form>
         <div class="d-flex justify-content-end" style="margin-top: 20px">
-          <button type="button" class="btn btn-success" onclick="addPunctuation()">Finish Test</button>
+          <button type="button" class="btn btn-success" onclick="getRanking()">Finish Test</button>
         </div>
         <p id="finishtest"></p>
-        
       </div>
       <div id="ranking">
         <h2>Ranking</h2>

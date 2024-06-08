@@ -6,6 +6,8 @@ function print(message, id){
 function welcomeMessage(){
     let name = document.getElementById("welcome1").value;
     let message = " Welcome " + name + " to ISTQB online Test";
+    let paragraph = document.getElementById("welcomeResponse");
+    paragraph.style.display = "block";
     print(message, "welcomeResponse");
 }
 
@@ -40,21 +42,26 @@ function checkAnswer(question){
    print (message, "q" + question + "CheckAnswer");
 } 
 
-let studentAnswer = new Array;
-let addition = 0;
-
 function addPunctuation(){
+    let studentAnswer = new Array;
+
     for(let i=0; i<testAnswers.length; i++) {
         let answer = document.getElementById("options" + (i+1)).value;
         studentAnswer.push(answer);
     };
 
-    for(let j=0; j<studentAnswer.length; j++) {
-        if (studentAnswer[j] === "") {
+    return studentAnswer;
+}
+
+function addAddition() {
+    let student = addPunctuation();
+    let addition = 0;
+    for(let j=0; j<student.length; j++) {
+        if (student[j] === "") {
             addition = addition + 0;
         }
         else {
-            if (studentAnswer[j] === testAnswers[j]) {
+            if (student[j] === testAnswers[j]) {
                 addition = addition + 2;
             }
             else {
@@ -62,7 +69,16 @@ function addPunctuation(){
             }
         }
     }
+    return addition;
+}
 
-    let message = "The final score is: " + addition;
+function getRanking(){
+    let results = addAddition();
+    let message = "The final score is: " + results;
     print(message, "finishtest");
+    document.getElementById("w1").reset();
+    document.getElementById("q1").reset();
+    let paragraph = document.getElementById("welcomeResponse");
+    paragraph.style.display = "none";
+
 }
