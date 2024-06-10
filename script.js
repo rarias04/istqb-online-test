@@ -75,6 +75,15 @@ function addAddition() {
     return addition;
 }
 
+
+function clearTest(){
+    document.getElementById("w1").reset();
+    document.getElementById("q1").reset();
+    let paragraph = document.getElementById("welcomeResponse");
+    paragraph.style.display = "none";
+}
+
+
 function finishTest(){
     let name = document.getElementById("welcome1").value;
     let results = addAddition();
@@ -85,11 +94,8 @@ function finishTest(){
     ranking.push(newStudent);
     let message = "The final score is: " + results;
     print(message, "finishtest");
-    document.getElementById("w1").reset();
-    document.getElementById("q1").reset();
-    let paragraph = document.getElementById("welcomeResponse");
-    paragraph.style.display = "none";
-}
+    clearTest();
+}   
 
 function displayRanking(){
     let paragraph = document.getElementById("ranking");
