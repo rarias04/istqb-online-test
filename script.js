@@ -11,8 +11,6 @@ function print(message, id){
 function welcomeMessage(){
     let name = document.getElementById("welcome1").value;
     let message = " Welcome " + name + " to ISTQB online Test";
-    let paragraph = document.getElementById("welcomeResponse");
-    paragraph.style.display = "block";
     print(message, "welcomeResponse");
 }
 
@@ -20,6 +18,8 @@ function showAnswer(question) {
     const correctCheckAnswer = "The correct answer is: ";
     let answer = testAnswers[question - 1];
     let message = correctCheckAnswer + answer;
+    let paragraph = document.getElementById("q" + question + "Response");
+    paragraph.style.display = "block";
     print (message, "q" + question + "Response");
 }
 
@@ -41,8 +41,10 @@ function checkAnswer(question){
     }
     else {
         message = incorrectAnswerMessage;
-    }   
-   print (message, "q" + question + "CheckAnswer");
+    }
+    let paragraph = document.getElementById("q" + question + "CheckAnswer");
+    paragraph.style.display = "block";   
+    print (message, "q" + question + "CheckAnswer");
 } 
 
 function addPunctuation(){
@@ -77,10 +79,19 @@ function addAddition() {
 
 
 function clearTest(){
+
     document.getElementById("w1").reset();
-    document.getElementById("q1").reset();
     let paragraph = document.getElementById("welcomeResponse");
-    paragraph.style.display = "none";
+    paragraph.innerText = "";
+    document.getElementById("q1").reset();
+
+    for(let i= 0; i<= testAnswers.length; i++){
+        let seeAnswer = document.getElementById("q" + (i+1) + "Response");
+        seeAnswer.innerText = "";
+        let seeCheckAnswer = document.getElementById("q" + (i+1) + "CheckAnswer");
+        seeCheckAnswer.innerText = "";
+    }
+   
 }
 
 
