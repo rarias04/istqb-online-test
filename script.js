@@ -1,3 +1,8 @@
+// array of a ranking of students
+let ranking = [];
+// correct answers
+const testAnswers =  ["B", "A", "B", "C", "A", "B", "A", "C", "C", "A"];
+
 function print(message, id){
     let paragraph = document.getElementById(id);
     paragraph.innerText = message;
@@ -10,8 +15,6 @@ function welcomeMessage(){
     paragraph.style.display = "block";
     print(message, "welcomeResponse");
 }
-
-const testAnswers =  ["B", "A", "B", "C", "A", "B", "A", "C", "C", "A"];
 
 function showAnswer(question) {
     const correctCheckAnswer = "The correct answer is: ";
@@ -72,13 +75,34 @@ function addAddition() {
     return addition;
 }
 
-function getRanking(){
+function finishTest(){
+    let name = document.getElementById("welcome1").value;
     let results = addAddition();
+    let newStudent = {
+        name: name,
+        mark: results
+    }
+    ranking.push(newStudent);
     let message = "The final score is: " + results;
     print(message, "finishtest");
     document.getElementById("w1").reset();
     document.getElementById("q1").reset();
     let paragraph = document.getElementById("welcomeResponse");
     paragraph.style.display = "none";
-
 }
+
+function displayRanking(){
+    let paragraph = document.getElementById("ranking");
+    print("Student Ranking", "students");
+    const rankingSorted = ranking.sort((a, b) => b.mark - a.mark);
+    for(i=0; i<rankingSorted.length; i++) {
+        let message = "";
+        let newParagraph = document.createElement("p");
+        newParagraph.setAttribute("id", `newParagraph${i}`);
+        paragraph.appendChild(newParagraph);
+        message+= (i+1);
+        message+= ". Name: " + rankingSorted[i].name;
+        message+= ". Score: " + rankingSorted[i].mark;
+       print(message, `newParagraph${i}`);
+    } 
+}  

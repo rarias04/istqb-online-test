@@ -193,13 +193,15 @@
           <p id="q11Response"></p>
         </form>
         <div class="d-flex justify-content-end" style="margin-top: 20px">
-          <button type="button" class="btn btn-success" onclick="getRanking()">Finish Test</button>
+          <button type="button" class="btn btn-success" onclick="finishTest()">Finish Test</button>
         </div>
         <p id="finishtest"></p>
       </div>
+      <div class="mb-3">
+        <button type="button" class="btn btn-success" onclick="displayRanking()"> Display Ranking</button>
+      </div>
       <div id="ranking">
-        <h2>Ranking</h2>
-        <p>Student Ranking</p>
+        <h2 id="students"></h2>
       </div>
     </div>
 
