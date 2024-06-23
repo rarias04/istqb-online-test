@@ -10,7 +10,7 @@ function print(message, id){
 
 function welcomeMessage(){
     let name = document.getElementById("welcome1").value;
-    let message = " Welcome " + name + " to ISTQB online Test";
+    let message = " Welcome " + name + " to the ISTQB online Test";
     print(message, "welcomeResponse");
 }
 
