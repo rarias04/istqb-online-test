@@ -36,12 +36,12 @@
         <p>Welcome to ISTQB Online Test</p>
         <form id="w1" class="was-validated">
           <div class="mb-3">
-            <input type="text" id="welcome1" required maxlength="10" placeholder="Name" class="form-control"/>
-            <p class="valid-feedback"></p>
-            <p class="invalid-feedback">Name field is required</p>
+            <input type="text" id="welcome1" data-cy="welcome-name-input" required maxlength="10" placeholder="Name" class="form-control"/>
+            <p class="valid-feedback" data-cy="success-welcome-message"></p>
+            <p class="invalid-feedback" data-cy="error-welcome-message">Name field is required</p>
           </div>
         </form>
-        <button type="button" class="btn btn-success" onclick="welcomeMessage()">Send</button>
+        <button type="button" data-cy="button-welcome-message" class="btn btn-success" onclick="welcomeMessage()">Send</button>
         <p id="welcomeResponse"></p>
       </div>
       <div id="test">
