@@ -51,7 +51,7 @@
           <div class="mb-3">
             <p>Question 1 of 10</p>
             <label for="options1">Which test may not mimic real world situations</label>
-            <select id="options1" class="form-select">
+            <select id="options1" data-cy="question1" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Functional Testing</option>
               <option value="B">B. Structural Testing</option>
@@ -59,146 +59,146 @@
             </select>
             
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(1)">See Answer</button>
-          <p id="q1Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(1)">Check Answer</button>
-          <p id="q1CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question1" class="btn btn-primary" onclick="showAnswer(1)">See Answer</button>
+          <p id="q1Response" data-cy="q1Response-question1"></p>
+          <button type="button" data-cy="button-checkAnswer-question1" class="btn btn-warning" onclick="checkAnswer(1)">Check Answer</button>
+          <p id="q1CheckAnswer" data-cy="q1CheckAnswer-question1"></p>
           <div class="mb-3">
             <p>Question 2 of 10</p>
             <label for="options2">Which tool needs to interface with other office automation software in order to generate reports in the format required by the organization?</label>
-            <select id="options2" class="form-select">
+            <select id="options2" data-cy="question2" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Test Management tools</option>
               <option value="B">B. Progress tracking tools</option>
               <option value="C">C. Metrics management tools</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(2)">See Answer</button>
-          <p id="q2Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(2)">Check Answer</button>
-          <p id="q2CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question2" class="btn btn-primary" onclick="showAnswer(2)">See Answer</button>
+          <p id="q2Response" data-cy="q2Response-question2"></p>
+          <button type="button" data-cy="button-checkAnswer-question2" class="btn btn-warning" onclick="checkAnswer(2)">Check Answer</button>
+          <p id="q2CheckAnswer" data-cy="q2CheckAnswer-question2"></p>
           <div class="mb-3">
             <p>Question 3 of 10</p>
             <label for="options3">What can static analysis NOT find?</label>
-            <select id="options3" class="form-select">
+            <select id="options3" data-cy="question3" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Unreachable ("dead") code</option>
               <option value="B">B. Whether the value stored in a variable is correct</option>
               <option value="C">C. The use of a variable before it has been defined</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(3)">See Answer</button>
-          <p id="q3Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(3)">Check Answer</button>
-          <p id="q3CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question3" class="btn btn-primary" onclick="showAnswer(3)">See Answer</button>
+          <p id="q3Response" data-cy="q3Response-question3"></p>
+          <button type="button" data-cy="button-checkAnswer-question3" class="btn btn-warning" onclick="checkAnswer(3)">Check Answer</button>
+          <p id="q3CheckAnswer" data-cy="q3CheckAnswer-question3"></p>
           <div class="mb-3">
             <p>Question 4 of 10</p>
             <label for="options4">What principle is BEST described when test designs are written by a third party?</label>
-            <select id="options4" class="form-select">
+            <select id="options4" data-cy="question4" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Exploratory testing</option>
               <option value="B">B. Integration testing</option>
               <option value="C">C. Independent testing</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(4)">See Answer</button>
-          <p id="q4Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(4)">Check Answer</button>
-          <p id="q4CheckAnswer"></p> 
+          <button type="button" data-cy="button-showAnswer-question4" class="btn btn-primary" onclick="showAnswer(4)">See Answer</button>
+          <p id="q4Response" data-cy="q4Response-question4"></p>
+          <button type="button" data-cy="button-checkAnswer-question4" class="btn btn-warning" onclick="checkAnswer(4)">Check Answer</button>
+          <p id="q4CheckAnswer" data-cy="q4CheckAnswer-question4"></p> 
           <div class="mb-3">
             <p>Question 5 of 10</p>
             <label for="options5">Which is not a testing principle</label>
-            <select id="options5" class="form-select">
+            <select id="options5" data-cy="question5" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Exhaustive testing</option>
               <option value="B">B. Defect clustering</option>
               <option value="C">C. Pesticide paradox</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(5)">See Answer</button>
-          <p id="q5Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(5)">Check Answer</button>
-          <p id="q5CheckAnswer"></p> 
+          <button type="button" data-cy="button-showAnswer-question5" class="btn btn-primary" onclick="showAnswer(5)">See Answer</button>
+          <p id="q5Response" data-cy="q5Response-question5"></p>
+          <button type="button" data-cy="button-checkAnswer-question5" class="btn btn-warning" onclick="checkAnswer(5)">Check Answer</button>
+          <p id="q5CheckAnswer" data-cy="q5CheckAnswer-question5"></p> 
           <div class="mb-3">
             <p>Question 6 of 10</p>
             <label for="options6">Who typically use static analysis tools?</label>
-            <select id="options6" class="form-select">
+            <select id="options6" data-cy="question6" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Customers and users</option>
               <option value="B">B. Developers and designers</option>
               <option value="C">C. Business and systems analysts</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(6)">See Answer</button>
-          <p id="q6Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(6)">Check Answer</button>
-          <p id="q6CheckAnswer"></p> 
+          <button type="button" data-cy="button-showAnswer-question6" class="btn btn-primary" onclick="showAnswer(6)">See Answer</button>
+          <p id="q6Response" data-cy="q6Response-question6"></p>
+          <button type="button" data-cy="button-checkAnswer-question6" class="btn btn-warning" onclick="checkAnswer(6)">Check Answer</button>
+          <p id="q6CheckAnswer" data-cy="q6CheckAnswer-question6"></p> 
           <div class="mb-3">
             <p>Question 7 of 10</p>
             <label for="options7">Test are prioritised so that:</label>
-            <select id="options7" class="form-select">
+            <select id="options7" data-cy="question7" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. You do the best testing in the time available</option>
               <option value="B">B. You do more effective testing</option>
               <option value="C">C. You shorten the time required for testing</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(7)">See Answer</button>
-          <p id="q7Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(7)">Check Answer</button>
-          <p id="q7CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question7" class="btn btn-primary" onclick="showAnswer(7)">See Answer</button>
+          <p id="q7Response" data-cy="q7Response-question7"></p>
+          <button type="button" data-cy="button-checkAnswer-question7" class="btn btn-warning" onclick="checkAnswer(7)">Check Answer</button>
+          <p id="q7CheckAnswer" data-cy="q7CheckAnswer-question7"></p>
           <div class="mb-3">
             <p>Question 8 of 10</p>
             <label for="options8">Hand over of Testware is a part of which Phase</label>
-            <select id="options8" class="form-select">
+            <select id="options8"  data-cy="question8" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Test Analysis and Design</option>
               <option value="B">B. Test Planning and control</option>
               <option value="C">C. Test Closure Activities</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(8)">See Answer</button>
-          <p id="q8Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(8)">Check Answer</button>
-          <p id="q8CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question8" class="btn btn-primary" onclick="showAnswer(8)">See Answer</button>
+          <p id="q8Response" data-cy="q8Response-question8"></p>
+          <button type="button" data-cy="button-checkAnswer-question8" class="btn btn-warning" onclick="checkAnswer(8)">Check Answer</button>
+          <p id="q8CheckAnswer" data-cy="q8CheckAnswer-question8"></p>
           <div class="mb-3">
             <p>Question 9 of 10</p>
             <label for="options9">Which of the following is a MAJOR task of evaluating exit criteria and reporting?</label>
-            <select id="options9" class="form-select">
+            <select id="options9" data-cy="question9" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Evaluating testability of the requirements and system</option>
               <option value="B">B. Logging the outcome of test execution</option>
               <option value="C">C. Writing a test summary report for stakeholders</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(9)">See Answer</button>
-          <p id="q9Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(9)">Check Answer</button>
-          <p id="q9CheckAnswer"></p>
+          <button type="button" data-cy="button-showAnswer-question9" class="btn btn-primary" onclick="showAnswer(9)">See Answer</button>
+          <p id="q9Response" data-cy="q9Response-question9"></p>
+          <button type="button" data-cy="button-checkAnswer-question9" class="btn btn-warning" onclick="checkAnswer(9)">Check Answer</button>
+          <p id="q9CheckAnswer" data-cy="q9CheckAnswer-question9"></p>
           <div class="mb-3">
             <p>Question 10 of 10</p>
             <label for="options10">Bug life cycle</label>
-            <select id="options10" class="form-select">
+            <select id="options10" data-cy="question10" class="form-select">
               <option value="" selected>Empty</option>
               <option value="A">A. Open, Assigned, Fixed, Closed</option>
               <option value="B">B. Open, Fixed, Assigned, Closed</option>
               <option value="C">C. Assigned, Open, Fixed, Closed</option>
             </select>
           </div>
-          <button type="button" class="btn btn-primary" onclick="showAnswer(10)">See Answer</button>
-          <p id="q10Response"></p>
-          <button type="button" class="btn btn-warning" onclick="checkAnswer(10)">Check Answer</button>
-          <p id="q10CheckAnswer"></p>
-          <p id="q11CheckAnswer"></p>
-          <p id="q11Response"></p>
+          <button type="button" data-cy="button-showAnswer-question10" class="btn btn-primary" onclick="showAnswer(10)">See Answer</button>
+          <p id="q10Response" data-cy="q10Response-question10"></p>
+          <button type="button" data-cy="button-checkAnswer-question10" class="btn btn-warning" onclick="checkAnswer(10)">Check Answer</button>
+          <p id="q10CheckAnswer" data-cy="q10CheckAnswer-question10"></p>
+          <p id="q11CheckAnswer" data-cy="q11CheckAnswer-question11"></p>
+          <p id="q11Response" data-cy="q11Response-question11"></p>
         </form>
         <div class="d-flex justify-content-end" style="margin-top: 20px">
-          <button type="button" class="btn btn-success" onclick="finishTest()">Finish Test</button>
+          <button type="button" data-cy="button-finishTest" class="btn btn-success" onclick="finishTest()">Finish Test</button>
         </div>
-        <p id="finishtest"></p>
+        <p id="finishtest" data-cy="response-finishTest"></p>
       </div>
       <div class="mb-3">
-        <button type="button" class="btn btn-success" onclick="displayRanking()"> Display Ranking</button>
+        <button type="button" data-cy="button-displayRanking" class="btn btn-success" onclick="displayRanking()"> Display Ranking</button>
       </div>
       <div id="ranking">
         <h2 id="students"></h2>
