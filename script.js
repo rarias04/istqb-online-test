@@ -116,6 +116,7 @@ function displayRanking(){
         let message = "";
         let newParagraph = document.createElement("p");
         newParagraph.setAttribute("id", `newParagraph${i}`);
+        newParagraph.setAttribute("data-cy", `newParagraph${i}`);
         paragraph.appendChild(newParagraph);
         message+= (i+1);
         message+= ". Name: " + rankingSorted[i].name;
